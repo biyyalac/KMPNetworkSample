@@ -11,12 +11,13 @@ class Greeting {
 
         //emit("Guess what this is! > ${platform().reversed()}")
        // delay(1.seconds)
-        emit(daysPhrase())
+        emit("0")
         val list=rocketComponent.launchPhrase()
         list.forEach {
             delay(1.seconds)
             emit(it)
         }
+        emit("1")
 
     }
 }
